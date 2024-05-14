@@ -1,10 +1,11 @@
 import Navbar from "./components/doc-navbar/Navbar";
-import Main from "./components/doc-main/Main";
+import VersionControl from "./components/doc-content/VersionControl";
 
 function App() {
   return (
-    <div className="bg-zinc-800 text-white">
+    <div className="bg-zinc-800 text-white min-h-screen">
       <Navbar></Navbar>
+      <VersionControl />
     </div>
   );
 }
