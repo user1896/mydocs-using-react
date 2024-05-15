@@ -4,13 +4,13 @@ import NavChapterAccordion from "./NavChapterAccordion";
 import AccordionSection from "./AccordionSection";
 import H1 from "./H1";
 
-export default function Navbar(){
+export default function LeftNavbar(){
 	return (
 		<nav className="
-			h-screen w-80 bg-red-950 overflow-x-hidden overflow-y-auto fixed
+			h-screen w-full lg:w-80 mt-12 bg-red-950 overflow-x-hidden overflow-y-auto fixed
 			scrollbar-thin scrollbar-thumb-zinc-600 scrollbar-track-zinc-800
 		" >
-			{/* when with is less then 1020px we should make "width: 100%" */}
+			{/* create toggle button when width is full */}
 			<H1>Git & Github</H1>
 
 			<NavChapter>
