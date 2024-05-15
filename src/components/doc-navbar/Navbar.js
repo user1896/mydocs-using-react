@@ -6,7 +6,10 @@ import H1 from "./H1";
 
 export default function Navbar(){
 	return (
-		<nav className="h-screen w-80 bg-red-950 overflow-x-hidden overflow-y-auto fixed" >
+		<nav className="
+			h-screen w-80 bg-red-950 overflow-x-hidden overflow-y-auto fixed
+			scrollbar-thin scrollbar-thumb-zinc-600 scrollbar-track-zinc-800
+		" >
 			{/* when with is less then 1020px we should make "width: 100%" */}
 			<H1>Git & Github</H1>
 
