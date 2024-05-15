@@ -4,13 +4,15 @@ import NavChapterAccordion from "./NavChapterAccordion";
 import AccordionSection from "./AccordionSection";
 import H1 from "./H1";
 
-export default function LeftNavbar(){
+export default function LeftNavbar({toggleNavbar}){
+	const navClassName = `
+		h-screen w-full lg:w-80 mt-12 bg-red-950 overflow-x-hidden overflow-y-auto fixed
+		${ toggleNavbar ? "" : "hidden" } lg:block
+		scrollbar-thin scrollbar-thumb-zinc-600 scrollbar-track-zinc-800
+	`
+
 	return (
-		<nav className="
-			h-screen w-full lg:w-80 mt-12 bg-red-950 overflow-x-hidden overflow-y-auto fixed
-			scrollbar-thin scrollbar-thumb-zinc-600 scrollbar-track-zinc-800
-		" >
-			{/* create toggle button when width is full */}
+		<nav className={navClassName} >
 			<H1>Git & Github</H1>
 
 			<NavChapter>
