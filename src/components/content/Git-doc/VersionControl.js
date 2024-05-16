@@ -1,11 +1,4 @@
-import Main from "../doc-main/Main";
-import Paragraph from "../doc-main/Paragraph";
-import H2 from "../doc-main/H2";
-import H3 from "../doc-main/H3";
-import H4 from "../doc-main/H4";
-import H5 from "../doc-main/H5";
-import UList from "../doc-main/UList";
-import OList from "../doc-main/OList";
+import {Main, Paragraph, H2, H3, H4, H5, UList, OList} from "../../main/MainExports";
 
 export default function VersionControl(){
 	return (

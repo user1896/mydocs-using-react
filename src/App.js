@@ -1,7 +1,7 @@
 import { useState } from "react";
-import LeftNavbar from "./components/doc-left-navbar/LeftNavbar";
-import VersionControl from "./components/doc-content/VersionControl";
-import TopNavbar from "./components/doc-top-navbar/TopNavbar";
+import GitNavbar from "./components/content/Git-doc/GitNavbar";
+import VersionControl from "./components/content/Git-doc/VersionControl";
+import TopNavbar from "./components/top-navbar/TopNavbar";
 
 function App() {
   const [toggleNavbar, setToggleNavbar] = useState(false)
@@ -12,7 +12,7 @@ function App() {
       <div className="bg-yellow-300 pt-12 lg:ml-80 flex justify-center">
         <VersionControl />
       </div>
-      <LeftNavbar toggleNavbar={toggleNavbar} />
+      <GitNavbar toggleNavbar={toggleNavbar} />
       <TopNavbar toggleNavbar={toggleNavbar} setToggleNavbar={setToggleNavbar} />
     </div>
   );
