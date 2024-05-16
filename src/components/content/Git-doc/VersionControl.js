@@ -1,8 +1,8 @@
 import {Main, Paragraph, H2, H3, H4, H5, UList, OList} from "../../main/MainExports";
 
-export default function VersionControl(){
+export default function VersionControl({toggleNavbar}){
 	return (
-		<Main>
+		<Main toggleNavbar={toggleNavbar} >
 			<H2>Version control</H2>
 			<Paragraph>
 				Version control is the management of changes to documents, computer programs, large websites and other 
