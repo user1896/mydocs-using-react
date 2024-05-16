@@ -1,17 +1,39 @@
+import { useState } from "react";
 import {LeftNavbar, H1, Chapter, ChapterTitle, Accordion, AccordionItem} 
 	from "../../left-navbar/NavbarExports";
 
 export default function GitNavbar({toggleNavbar}){
+	const [accordion1, setAccordion1] = useState(false)
+	const [accordion2, setAccordion2] = useState(false)
+	const [accordion3, setAccordion3] = useState(false)
+	const [accordion4, setAccordion4] = useState(false)
+
+	function handleAccordion1(){
+		setAccordion1(!accordion1)
+	}
+
+	function handleAccordion2(){
+		setAccordion2(!accordion2)
+	}
+
+	function handleAccordion3(){
+		setAccordion3(!accordion3)
+	}
+
+	function handleAccordion4(){
+		setAccordion4(!accordion4)
+	}
+
 	return (
 		<LeftNavbar toggleNavbar={toggleNavbar} >
 			<H1>Git & Github</H1>
 
 			<Chapter>
-				<ChapterTitle>
+				<ChapterTitle onClick={handleAccordion1} >
 					1. Version control
 				</ChapterTitle>
 
-				<Accordion>
+				<Accordion accordionState={accordion1} >
 					<AccordionItem>
 						1.1. Centralized VCS
 					</AccordionItem>
@@ -23,11 +45,11 @@ export default function GitNavbar({toggleNavbar}){
 			</Chapter>
 
 			<Chapter>
-				<ChapterTitle>
+				<ChapterTitle onClick={handleAccordion2} >
 					2. What is Git?
 				</ChapterTitle>
 
-				<Accordion>
+				<Accordion accordionState={accordion2} >
 					<AccordionItem>
 						2.1. Initialise repository
 					</AccordionItem>
@@ -99,11 +121,11 @@ export default function GitNavbar({toggleNavbar}){
 			</Chapter>
 
 			<Chapter>
-				<ChapterTitle>
+				<ChapterTitle onClick={handleAccordion3} >
 					3. What is GitHub?
 				</ChapterTitle>
 
-				<Accordion>
+				<Accordion accordionState={accordion3} >
 					<AccordionItem>
 						3.1. Starting a new Git repository
 					</AccordionItem>
@@ -123,11 +145,11 @@ export default function GitNavbar({toggleNavbar}){
 			</Chapter>
 
 			<Chapter>
-				<ChapterTitle>
+				<ChapterTitle onClick={handleAccordion4} >
 					4. Other useful commands
 				</ChapterTitle>
 
-				<Accordion>
+				<Accordion accordionState={accordion4} >
 					<AccordionItem>
 						4.1. General commands
 					</AccordionItem>

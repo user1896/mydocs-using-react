@@ -9,9 +9,7 @@ function App() {
 
   return (
     <div className="bg-zinc-800 text-white min-h-screen">
-      <div className="bg-yellow-300 pt-12 lg:ml-80 flex justify-center">
-        <VersionControl />
-      </div>
+      <VersionControl />
       <GitNavbar toggleNavbar={toggleNavbar} />
       <TopNavbar toggleNavbar={toggleNavbar} setToggleNavbar={setToggleNavbar} />
     </div>

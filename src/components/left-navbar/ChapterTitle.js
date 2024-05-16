@@ -1,7 +1,7 @@
-export default function ChapterTitle({children}){
+export default function ChapterTitle({children, onClick}){
 	return(
-		<h3 className="text-xl py-1 px-4" >
+		<div onClick={onClick} className="text-xl font-medium py-1 px-4 hover:bg-lime-500 w-full" >
 			{children}
-		</h3>
+		</div>
 	)
 }
