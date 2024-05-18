@@ -1,5 +1,5 @@
 export default function Main({children, toggleNavbar}){
-	const mainClassName = `p-7 max-w-screen-2xl ${ toggleNavbar ? "hidden" : "" }`
+	const mainClassName = `text-justify p-7 max-w-screen-lg ${ toggleNavbar ? "hidden" : "" }`
 
 	return(
 		<div className="pt-12 lg:ml-80 flex justify-center" >
