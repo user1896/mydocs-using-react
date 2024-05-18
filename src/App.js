@@ -13,6 +13,8 @@ function App() {
       <GitNavbar toggleNavbar={toggleNavbar} />
       <TopNavbar toggleNavbar={toggleNavbar} setToggleNavbar={setToggleNavbar} />
     </div>
+    /* create a single page that holds all pages of a single document in one web page, so we can search for 
+    a word with "ctr+f" */
   );
 }
 

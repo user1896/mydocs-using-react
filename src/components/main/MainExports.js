@@ -6,5 +6,6 @@ import H4 from "./H4";
 import H5 from "./H5";
 import UList from "./UList";
 import OList from "./OList";
+import Img from "./Img";
 
-export {Main, P, H2, H3, H4, H5, UList, OList}
+export {Main, P, H2, H3, H4, H5, UList, OList, Img}

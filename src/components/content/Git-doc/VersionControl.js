@@ -1,4 +1,6 @@
-import {Main, P, H2, H3, H4, H5, UList, OList} from "../../main/MainExports";
+import {Main, P, H2, H3, H4, H5, UList, OList, Img} from "../../main/MainExports";
+import img1 from "./images/ch1-img1.png"
+import img2 from "./images/ch1-img2.png"
 
 export default function VersionControl({toggleNavbar}){
 	return (
@@ -20,7 +22,7 @@ export default function VersionControl({toggleNavbar}){
 				collaboration.
 				<strong>It works on a single repository</strong> to which users can directly access a central server.
 			</P>
-			{/* img here */}
+			<Img src={img1} alt="Version control" />
 			<P>
 				The repository in the above diagram indicates a central server that could be local or remote which is
 				directly connected to each of the programmer’s workstation.
@@ -53,7 +55,7 @@ export default function VersionControl({toggleNavbar}){
 				maintains a local repository of their own which contains all the files and metadata present in the 
 				main repository.
 			</P>
-			{/* img here */}
+			<Img src={img2} alt="Distributed VCS" />
 			<P>
 				Every programmer maintains a local repository on its own, which is actually the copy or clone of the 
 				central repository on their hard drive. They can commit and update their local repository without 
