@@ -8,9 +8,16 @@ function App() {
   const [toggleNavbar, setToggleNavbar] = useState(false)
   console.log(toggleNavbar)
   /* when we make the screen small and then toggle the leftNavbar to take full screen, then we make the 
-  screen big again, the leftNavbar will still take the whole screen. Fix it */
+  screen big again, the leftNavbar will still take the whole screen. Fix it.
+  This can't be done with Tailwind, so I have to use React
+  There is a solution here: https://www.altcademy.com/blog/how-to-check-screen-width-in-reactjs/
+  Check useEffect.
+  */
+
+
+  /* all accordions should share the same state, when one of them gets expanded, the other shrinks */
   return (
-    <div className="bg-zinc-800 text-white min-h-screen">
+    <div className="bg-zinc-800 text-white min-h-screen pt-12">
       <FullChapter1 toggleNavbar={toggleNavbar} />
       <FullChapter2 toggleNavbar={toggleNavbar} />
       <GitNavbar toggleNavbar={toggleNavbar} />
