@@ -24,28 +24,28 @@ export default function Title2({toggleNavbar}){
 				called “pull” and affect changes to the main repository by an operation called “push” from their 
 				local repository.
 			</P>
-			<P>
+			<p>
 				The act of cloning an entire repository into your workstation to get a local repository gives you the 
 				following advantages:
-				<UList>
-					<li>
-						All operations (except push & pull) are very fast because the tool only needs to access the hard 
-						drive, not a remote server. Hence, you do not always need an internet connection.
-					</li>
-					<li>
-						Since every contributor has a full copy of the project repository, they can share changes with one 
-						another if they want to get some feedback before affecting changes in the main repository.
-					</li>
-					<li>
-						It lets developers work in an isolated environment, deferring (تأجيل) integration until they’re at 
-						a convenient point to merge with other users.
-					</li>
-					<li>
-						If the central server gets crashed at any point of time, the lost data can be easily recovered 
-						from any one of the contributor’s local repositories.
-					</li>
-				</UList>
-			</P>
+			</p>
+			<UList>
+				<li>
+					All operations (except push & pull) are very fast because the tool only needs to access the hard 
+					drive, not a remote server. Hence, you do not always need an internet connection.
+				</li>
+				<li>
+					Since every contributor has a full copy of the project repository, they can share changes with one 
+					another if they want to get some feedback before affecting changes in the main repository.
+				</li>
+				<li>
+					It lets developers work in an isolated environment, deferring (تأجيل) integration until they’re at 
+					a convenient point to merge with other users.
+				</li>
+				<li>
+					If the central server gets crashed at any point of time, the lost data can be easily recovered 
+					from any one of the contributor’s local repositories.
+				</li>
+			</UList>
 		</Main>
 	)
 }

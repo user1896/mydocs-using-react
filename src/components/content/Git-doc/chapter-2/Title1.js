@@ -11,10 +11,8 @@ export default function Title1({toggleNavbar}){
 				from each other), it tracks changes in any set of computer files, usually used for coordinating work 
 				among programmers collaboratively developing source code during software development.
 			</P>
-			<P>
-				The architecture of Git :
-				<Img src={img1} />
-			</P>
+			<p>The architecture of Git :</p>
+			<Img src={img1} />
 			<H3>2.1. Initialise repository</H3>
 			<UList>
 				<li>
