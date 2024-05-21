@@ -1,11 +1,13 @@
-import FullChapter1 from "./chapter-1/FullChapter";
-import FullChapter2 from "./chapter-2/FullChapter";
+import Chapter1 from "./chapter-1/full-chapter/Content";
+import Chapter2 from "./chapter-2/full-chapter/Content";
+import GitNavbar from "./GitNavbar";
 
 export default function GitDoc(){
 	return (
 		<>
-			<FullChapter1/>
-			<FullChapter2/>
+			<Chapter1/>
+			<Chapter2/>
+			<GitNavbar />
 		</>
 	)
 }

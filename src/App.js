@@ -2,8 +2,8 @@ import { Routes } from "react-router-dom";
 import GitNavbar from "./components/content/Git-doc/GitNavbar";
 import TopNavbar from "./components/top-navbar/TopNavbar";
 import GitDoc from "./components/content/Git-doc/GitDoc";
-import FullChapter1 from "./components/content/Git-doc/chapter-1/FullChapter";
-import FullChapter2 from "./components/content/Git-doc/chapter-2/FullChapter";
+import Chapter1Page from "./components/content/Git-doc/chapter-1/full-chapter/Page";
+import Chapter2Page from "./components/content/Git-doc/chapter-2/full-chapter/Page";
 import {ToggleNavbarProvider} from "./context/navbarContext";
 
 function App() {
@@ -19,10 +19,7 @@ function App() {
   return (
     <ToggleNavbarProvider>
       <div className="bg-zinc-800 text-white min-h-screen pt-12">
-        {/* <GitDoc/>
-        <GitNavbar/>
-        <TopNavbar setToggleNavbar={setToggleNavbar} /> */}
-        <FullChapter1 />
+        <GitDoc />
       </div>
     </ToggleNavbarProvider>
     /* create a single page that holds all pages of a single document in one web page, so we can search for 

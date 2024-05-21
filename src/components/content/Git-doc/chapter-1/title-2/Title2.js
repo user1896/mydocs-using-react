@@ -1,5 +1,5 @@
-import {Main, P, H2, H3, H4, H5, UList, OList, Img} from "../../../main/MainExports";
-import img2 from "../images/ch1-img2.png";
+import {Main, P, H2, H3, H4, H5, UList, OList, Img} from "../../../../main/MainExports";
+import img2 from "../../images/ch1-img2.png";
 
 export default function Title2(){
 	return (
