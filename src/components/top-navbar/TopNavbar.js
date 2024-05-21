@@ -1,7 +1,11 @@
 import Button from "../Button";
 import { FaBars } from "react-icons/fa";
+import navbarContext from "../../context/navbarContext";
+import { useContext } from "react";
 
-export default function TopNavbar({toggleNavbar, setToggleNavbar}){
+export default function TopNavbar({setToggleNavbar}){
+	const toggleNavbar = useContext(navbarContext)
+	
 	function handleClick(){
 		setToggleNavbar( !toggleNavbar )
 	}

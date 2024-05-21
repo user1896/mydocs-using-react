@@ -1,8 +1,8 @@
 import {Main, P, H2, H3, H4, H5, UList, OList, Img} from "../../../main/MainExports";
 
-export default function Title2({toggleNavbar}){
+export default function Title2(){
 	return (
-		<Main toggleNavbar={toggleNavbar} >
+		<Main>
 			<H3>2.2. Remote</H3>
 			<P>
 				The <strong>git</strong> remote command lets you create, view, and delete connections to other 

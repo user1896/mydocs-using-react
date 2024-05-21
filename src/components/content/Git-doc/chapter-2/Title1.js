@@ -1,9 +1,9 @@
 import {Main, P, H2, H3, H4, H5, UList, OList, Img} from "../../../main/MainExports";
 import img1 from "../images/ch2-img1.png";
 
-export default function Title1({toggleNavbar}){
+export default function Title1(){
 	return (
-		<Main toggleNavbar={toggleNavbar} >
+		<Main>
 			<H2>2. What is Git?</H2>
 			<P>
 				Git is a distributed version control system that supports distributed non-linear workflows (a workflow 

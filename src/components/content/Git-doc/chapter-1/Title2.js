@@ -1,9 +1,9 @@
 import {Main, P, H2, H3, H4, H5, UList, OList, Img} from "../../../main/MainExports";
 import img2 from "../images/ch1-img2.png";
 
-export default function Title2({toggleNavbar}){
+export default function Title2(){
 	return (
-		<Main toggleNavbar={toggleNavbar} >
+		<Main>
 			<H3>1.2. Distributed VCS</H3>
 			<P>
 				These systems do not necessarily rely on a central server to store all the versions of a project file.

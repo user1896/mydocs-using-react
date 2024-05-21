@@ -1,9 +1,9 @@
 import {Main, P, H2, H3, H4, H5, UList, OList, Img} from "../../../main/MainExports";
 import img1 from "../images/ch1-img1.png";
 
-export default function Title1({toggleNavbar}){
+export default function Title1(){
 	return (
-		<Main toggleNavbar={toggleNavbar} >
+		<Main>
 			<H2>1. Version control</H2>
 			<P>
 				Version control is the management of changes to documents, computer programs, large websites and other 

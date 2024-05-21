@@ -1,9 +1,9 @@
 import { useState } from "react";
+import { Routes } from "react-router-dom";
 import GitNavbar from "./components/content/Git-doc/GitNavbar";
 import TopNavbar from "./components/top-navbar/TopNavbar";
-import FullChapter1 from "./components/content/Git-doc/chapter-1/FullChapter";
-import FullChapter2 from "./components/content/Git-doc/chapter-2/FullChapter";
 import GitDoc from "./components/content/Git-doc/GitDoc";
+import toggleNavbarContext from "./context/navbarContext";
 
 function App() {
   const [toggleNavbar, setToggleNavbar] = useState(false)
@@ -18,13 +18,13 @@ function App() {
 
   /* all accordions should share the same state, when one of them gets expanded, the other shrinks */
   return (
-    <div className="bg-zinc-800 text-white min-h-screen pt-12">
-      <GitDoc toggleNavbar={toggleNavbar} />
-      {/* <FullChapter1 toggleNavbar={toggleNavbar} />
-      <FullChapter2 toggleNavbar={toggleNavbar} /> */}
-      <GitNavbar toggleNavbar={toggleNavbar} />
-      <TopNavbar toggleNavbar={toggleNavbar} setToggleNavbar={setToggleNavbar} />
-    </div>
+    <toggleNavbarContext.Provider value={toggleNavbar} >
+        <div className="bg-zinc-800 text-white min-h-screen pt-12">
+          <GitDoc/>
+          <GitNavbar/>
+          <TopNavbar setToggleNavbar={setToggleNavbar} />
+        </div>
+    </toggleNavbarContext.Provider>
     /* create a single page that holds all pages of a single document in one web page, so we can search for 
     a word with "ctr+f" */
   );

@@ -2,7 +2,7 @@ import { useState } from "react";
 import {LeftNavbar, H1, Chapter, ChapterTitle, Accordion, AccordionItem} 
 	from "../../left-navbar/NavbarExports";
 
-export default function GitNavbar({toggleNavbar}){
+export default function GitNavbar(){
 	const [accordion1, setAccordion1] = useState(false)
 	const [accordion2, setAccordion2] = useState(false)
 	const [accordion3, setAccordion3] = useState(false)
@@ -25,7 +25,7 @@ export default function GitNavbar({toggleNavbar}){
 	}
 
 	return (
-		<LeftNavbar toggleNavbar={toggleNavbar} >
+		<LeftNavbar>
 			<H1>Git & Github</H1>
 
 			<Chapter>
