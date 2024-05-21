@@ -1,8 +1,7 @@
-import navbarContext from "../../context/navbarContext";
-import { useContext } from "react";
+import {useToggleNavbar} from "../../context/navbarContext";
 
 export default function Main({children}){
-	const toggleNavbar = useContext(navbarContext)
+	const toggleNavbar = useToggleNavbar()
 	const mainClassName = `text-justify p-7 max-w-screen-lg ${ toggleNavbar ? "hidden" : "" }`
 
 	return(

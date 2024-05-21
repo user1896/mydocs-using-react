@@ -1,8 +1,7 @@
-import navbarContext from "../../context/navbarContext";
-import { useContext } from "react";
+import {useToggleNavbar} from "../../context/navbarContext";
 
 export default function LeftNavbar({children}){
-	const toggleNavbar = useContext(navbarContext)
+	const toggleNavbar = useToggleNavbar()
 	const navClassName = `
 		h-screen w-full lg:w-80 pt-12 overflow-x-hidden overflow-y-auto fixed top-0 left-0
 		${ toggleNavbar ? "" : "hidden" } lg:block
