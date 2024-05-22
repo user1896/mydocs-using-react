@@ -1,7 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import GitDoc from "./components/content/Git-doc/GitDoc";
-import Chapter1Page from "./components/content/Git-doc/chapter-1/full-chapter/Page";
-import Chapter2Page from "./components/content/Git-doc/chapter-2/full-chapter/Page";
+import {Ch1, Ch1Page1, Ch1Page2, Ch2, Ch2Page1, Ch2Page2} from "./components/content/Git-doc/ExportPages";
 import {ToggleNavbarProvider} from "./context/navbarContext";
 
 function App() {
@@ -18,8 +17,14 @@ function App() {
       <div className="bg-zinc-800 text-white min-h-screen pt-12">
         <Routes>
           <Route exact path='/' element={<GitDoc />} />
-          <Route path='/1' element={<Chapter1Page />} />
-          <Route path='/2' element={<Chapter2Page />} />
+          {/* Chapter 1 */}
+          <Route path='/1' element={<Ch1 />} />
+          <Route path='/1p1' element={<Ch1Page1 />} />
+          <Route path='/1p2' element={<Ch1Page2 />} />
+          {/* Chapter 2 */}
+          <Route path='/2' element={<Ch2 />} />
+          <Route path='/2p1' element={<Ch2Page1 />} />
+          <Route path='/2p2' element={<Ch2Page2 />} />
         </Routes>
       </div>
     </ToggleNavbarProvider>

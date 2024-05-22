@@ -1,7 +1,8 @@
 import { useState } from "react";
 import {LeftNavbar, H1, Chapter, ChapterTitle, Accordion, AccordionItem} 
-	from "../../left-navbar/NavbarExports";
+	from "../../left-navbar/ExportsNavbar";
 import TopNavbar from "../../top-navbar/TopNavbar";
+import { Link } from "react-router-dom";
 
 export default function GitNavbar(){
 	const [accordion1, setAccordion1] = useState(false)

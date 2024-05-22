@@ -1,7 +1,7 @@
-import {Main, P, H2, H3, H4, H5, UList, OList, Img} from "../../../../main/MainExports";
+import {Main, P, H2, H3, H4, H5, UList, OList, Img} from "../../../../main/ExportsMain";
 import img2 from "../../images/ch1-img2.png";
 
-export default function Title2(){
+export default function Content(){
 	return (
 		<Main>
 			<H3>1.2. Distributed VCS</H3>

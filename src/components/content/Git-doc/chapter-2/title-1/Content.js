@@ -1,7 +1,7 @@
-import {Main, P, H2, H3, H4, H5, UList, OList, Img} from "../../../../main/MainExports";
+import {Main, P, H2, H3, H4, H5, UList, OList, Img} from "../../../../main/ExportsMain";
 import img1 from "../../images/ch2-img1.png";
 
-export default function Title1(){
+export default function Content(){
 	return (
 		<Main>
 			<H2>2. What is Git?</H2>

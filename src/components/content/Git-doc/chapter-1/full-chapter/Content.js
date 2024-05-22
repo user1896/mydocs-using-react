@@ -1,5 +1,5 @@
-import Title1 from "../title-1/Title1";
-import Title2 from "../title-2/Title2";
+import Title1 from "../title-1/Content";
+import Title2 from "../title-2/Content";
 
 export default function Content(){
 	return (
