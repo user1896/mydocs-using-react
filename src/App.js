@@ -10,8 +10,6 @@ function App() {
   There is a solution here: https://www.altcademy.com/blog/how-to-check-screen-width-in-reactjs/
   Check useEffect.
   */
-
-  /* all accordions should share the same state, when one of them gets expanded, the other shrinks */
   return (
     <ToggleNavbarProvider>
       <div className="bg-zinc-800 text-white min-h-screen pt-12">

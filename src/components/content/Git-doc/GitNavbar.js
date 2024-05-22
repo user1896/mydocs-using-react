@@ -3,27 +3,43 @@ import {LeftNavbar, H1, Chapter, ChapterTitle, Accordion, AccordionItem}
 	from "../../left-navbar/ExportsNavbar";
 import TopNavbar from "../../top-navbar/TopNavbar";
 import { Link } from "react-router-dom";
+import { useAccordion, useSetAccordion } from "../../../context/navbarContext";
+
+/* add a logo at the end of the chapter name that expands the accordion when clicked on it
+and now clicking the chapter name only takes us to the chapter and not expand the accordion */
+
+/* if so many titles display, the last two at the bottom won't show because the navbar is positioned top-12 */
 
 export default function GitNavbar(){
-	const [accordion1, setAccordion1] = useState(false)
-	const [accordion2, setAccordion2] = useState(false)
-	const [accordion3, setAccordion3] = useState(false)
-	const [accordion4, setAccordion4] = useState(false)
+	const accordion = useAccordion()
+	const setAccordion = useSetAccordion()
 
 	function handleAccordion1(){
-		setAccordion1(!accordion1)
+		if( !accordion || accordion !== 1 )
+			setAccordion(1) // the "OR ||" is for the accordion to open when another one is already opened
+		else
+			setAccordion(0) // so the accordion shrinks again
 	}
 
 	function handleAccordion2(){
-		setAccordion2(!accordion2)
+		if( !accordion || accordion !== 2 )
+			setAccordion(2)
+		else
+			setAccordion(0)
 	}
 
 	function handleAccordion3(){
-		setAccordion3(!accordion3)
+		if( !accordion || accordion !== 3 )
+			setAccordion(3)
+		else
+			setAccordion(0)
 	}
 
 	function handleAccordion4(){
-		setAccordion4(!accordion4)
+		if( !accordion || accordion !== 4 )
+			setAccordion(4)
+		else
+			setAccordion(0)
 	}
 
 	return (
@@ -33,34 +49,46 @@ export default function GitNavbar(){
 				<H1>Git & Github</H1>
 
 				<Chapter>
-					<ChapterTitle onClick={handleAccordion1} >
-						1. Version control
-					</ChapterTitle>
+					<Link to="/1" >
+						<ChapterTitle onClick={handleAccordion1} >
+							1. Version control
+						</ChapterTitle>
+					</Link>
 
-					<Accordion accordionState={accordion1} >
-						<AccordionItem>
-							1.1. Centralized VCS
-						</AccordionItem>
+					<Accordion accordionState={ accordion === 1 ? true : false } >
+						<Link to="/1p1" >
+							<AccordionItem>
+								1.1. Centralized VCS
+							</AccordionItem>
+						</Link>
 
-						<AccordionItem>
-							1.2. Distributed VCS
-						</AccordionItem>
+						<Link to="/1p2" >
+							<AccordionItem>
+								1.2. Distributed VCS
+							</AccordionItem>
+						</Link>
 					</Accordion>
 				</Chapter>
 
 				<Chapter>
-					<ChapterTitle onClick={handleAccordion2} >
-						2. What is Git?
-					</ChapterTitle>
+					<Link to="/2" >
+						<ChapterTitle onClick={handleAccordion2} >
+							2. What is Git?
+						</ChapterTitle>
+					</Link>
 
-					<Accordion accordionState={accordion2} >
-						<AccordionItem>
-							2.1. Initialise repository
-						</AccordionItem>
+					<Accordion accordionState={ accordion === 2 ? true : false } >
+						<Link to="/2p1" >
+							<AccordionItem>
+								2.1. Initialise repository
+							</AccordionItem>
+						</Link>
 
-						<AccordionItem>
-							2.2. Remote
-						</AccordionItem>
+						<Link to="/2p2" >
+							<AccordionItem>
+								2.2. Remote
+							</AccordionItem>
+						</Link>
 
 						<AccordionItem>
 							2.3. Status
@@ -129,7 +157,7 @@ export default function GitNavbar(){
 						3. What is GitHub?
 					</ChapterTitle>
 
-					<Accordion accordionState={accordion3} >
+					<Accordion accordionState={ accordion === 3 ? true : false } >
 						<AccordionItem>
 							3.1. Starting a new Git repository
 						</AccordionItem>
@@ -153,7 +181,7 @@ export default function GitNavbar(){
 						4. Other useful commands
 					</ChapterTitle>
 
-					<Accordion accordionState={accordion4} >
+					<Accordion accordionState={ accordion === 4 ? true : false } >
 						<AccordionItem>
 							4.1. General commands
 						</AccordionItem>
