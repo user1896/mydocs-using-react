@@ -1,4 +1,3 @@
-import { useState } from "react";
 import {LeftNavbar, H1, Chapter, ChapterTitle, Accordion, AccordionItem} 
 	from "../../left-navbar/ExportsNavbar";
 import TopNavbar from "../../top-navbar/TopNavbar";
@@ -9,6 +8,8 @@ import { useAccordion, useSetAccordion } from "../../../context/navbarContext";
 and now clicking the chapter name only takes us to the chapter and not expand the accordion */
 
 /* if so many titles display, the last two at the bottom won't show because the navbar is positioned top-12 */
+
+/* When we click on a Link, the navbar should close, this is important for small screens */
 
 export default function GitNavbar(){
 	const accordion = useAccordion()
