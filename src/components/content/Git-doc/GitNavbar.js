@@ -10,6 +10,10 @@ import { useAccordion, useSetAccordion } from "../../../context/navbarContext";
 export default function GitNavbar(){
 	const accordion = useAccordion()
 	const setAccordion = useSetAccordion()
+	const accordionState1 = accordion === 1 ? true : false
+	const accordionState2 = accordion === 2 ? true : false
+	const accordionState3 = accordion === 3 ? true : false
+	const accordionState4 = accordion === 4 ? true : false
 
 	function handleAccordion1(){
 		if( !accordion || accordion !== 1 )
@@ -46,11 +50,11 @@ export default function GitNavbar(){
 				<H1>Git & Github</H1>
 
 				<Chapter>
-					<ChapterTitle onClick={handleAccordion1} toLink="/1" >
+					<ChapterTitle onClick={handleAccordion1} toLink="/1" accordionState={ accordionState1 } >
 						1. Version control
 					</ChapterTitle>
 
-					<Accordion accordionState={ accordion === 1 ? true : false } >
+					<Accordion accordionState={ accordionState1 } >
 						<AccordionItem toLink="/1p1" >
 							1.1. Centralized VCS
 						</AccordionItem>
@@ -62,11 +66,11 @@ export default function GitNavbar(){
 				</Chapter>
 
 				<Chapter>
-					<ChapterTitle onClick={handleAccordion2} toLink="/2" >
+					<ChapterTitle onClick={handleAccordion2} toLink="/2" accordionState={ accordionState2 } >
 						2. What is Git?
 					</ChapterTitle>
 
-					<Accordion accordionState={ accordion === 2 ? true : false } >
+					<Accordion accordionState={ accordionState2 } >
 						<AccordionItem toLink="/2p1" >
 							2.1. Initialise repository
 						</AccordionItem>
@@ -138,11 +142,11 @@ export default function GitNavbar(){
 				</Chapter>
 
 				<Chapter>
-					<ChapterTitle onClick={handleAccordion3} >
+					<ChapterTitle onClick={handleAccordion3} accordionState={ accordionState3 } >
 						3. What is GitHub?
 					</ChapterTitle>
 
-					<Accordion accordionState={ accordion === 3 ? true : false } >
+					<Accordion accordionState={ accordionState3 } >
 						<AccordionItem>
 							3.1. Starting a new Git repository
 						</AccordionItem>
@@ -162,11 +166,11 @@ export default function GitNavbar(){
 				</Chapter>
 
 				<Chapter>
-					<ChapterTitle onClick={handleAccordion4} >
+					<ChapterTitle onClick={handleAccordion4} accordionState={ accordionState4 } >
 						4. Other useful commands
 					</ChapterTitle>
 
-					<Accordion accordionState={ accordion === 4 ? true : false } >
+					<Accordion accordionState={ accordionState4 } >
 						<AccordionItem>
 							4.1. General commands
 						</AccordionItem>

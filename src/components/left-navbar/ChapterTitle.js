@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
 import Button from "../Button";
 import { IoIosArrowForward } from "react-icons/io";
+import { IoIosArrowDown } from "react-icons/io";
 
-export default function ChapterTitle({children, onClick, toLink}){
+export default function ChapterTitle({children, onClick, toLink, accordionState}){
 	return(
 		<div
 			className="
@@ -15,7 +16,7 @@ export default function ChapterTitle({children, onClick, toLink}){
 			</Link>
 			{/* this arrow should change to "down" when the acccordion is opened */}
 			<Button className="hover:bg-slate-700 p-1.5" onClick={onClick} >
-				<IoIosArrowForward />
+				{ accordionState ? <IoIosArrowDown /> : <IoIosArrowForward />}
 			</Button>
 		</div>
 	)
