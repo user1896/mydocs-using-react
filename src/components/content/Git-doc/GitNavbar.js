@@ -1,11 +1,7 @@
 import {LeftNavbar, H1, Chapter, ChapterTitle, Accordion, AccordionItem} 
 	from "../../left-navbar/ExportsNavbar";
 import TopNavbar from "../../top-navbar/TopNavbar";
-import { Link } from "react-router-dom";
 import { useAccordion, useSetAccordion } from "../../../context/navbarContext";
-
-/* add a logo at the end of the chapter name that expands the accordion when clicked on it
-and now clicking the chapter name only takes us to the chapter and not expand the accordion */
 
 /* if so many titles display, the last two at the bottom won't show because the navbar is positioned top-12 */
 
@@ -50,46 +46,34 @@ export default function GitNavbar(){
 				<H1>Git & Github</H1>
 
 				<Chapter>
-					<Link to="/1" >
-						<ChapterTitle onClick={handleAccordion1} >
-							1. Version control
-						</ChapterTitle>
-					</Link>
+					<ChapterTitle onClick={handleAccordion1} toLink="/1" >
+						1. Version control
+					</ChapterTitle>
 
 					<Accordion accordionState={ accordion === 1 ? true : false } >
-						<Link to="/1p1" >
-							<AccordionItem>
-								1.1. Centralized VCS
-							</AccordionItem>
-						</Link>
+						<AccordionItem toLink="/1p1" >
+							1.1. Centralized VCS
+						</AccordionItem>
 
-						<Link to="/1p2" >
-							<AccordionItem>
-								1.2. Distributed VCS
-							</AccordionItem>
-						</Link>
+						<AccordionItem toLink="/1p2" >
+							1.2. Distributed VCS
+						</AccordionItem>
 					</Accordion>
 				</Chapter>
 
 				<Chapter>
-					<Link to="/2" >
-						<ChapterTitle onClick={handleAccordion2} >
-							2. What is Git?
-						</ChapterTitle>
-					</Link>
+					<ChapterTitle onClick={handleAccordion2} toLink="/2" >
+						2. What is Git?
+					</ChapterTitle>
 
 					<Accordion accordionState={ accordion === 2 ? true : false } >
-						<Link to="/2p1" >
-							<AccordionItem>
-								2.1. Initialise repository
-							</AccordionItem>
-						</Link>
+						<AccordionItem toLink="/2p1" >
+							2.1. Initialise repository
+						</AccordionItem>
 
-						<Link to="/2p2" >
-							<AccordionItem>
-								2.2. Remote
-							</AccordionItem>
-						</Link>
+						<AccordionItem toLink="/2p2" >
+							2.2. Remote
+						</AccordionItem>
 
 						<AccordionItem>
 							2.3. Status
