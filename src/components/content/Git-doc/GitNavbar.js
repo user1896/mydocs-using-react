@@ -54,7 +54,7 @@ export default function GitNavbar(){
 						1. Version control
 					</ChapterTitle>
 
-					<Accordion accordionState={ accordionState1 } >
+					<Accordion accordionState={ accordionState1 } nbrTitles={2} >
 						<AccordionItem toLink="/1p1" >
 							1.1. Centralized VCS
 						</AccordionItem>
@@ -70,7 +70,7 @@ export default function GitNavbar(){
 						2. What is Git?
 					</ChapterTitle>
 
-					<Accordion accordionState={ accordionState2 } >
+					<Accordion accordionState={ accordionState2 } nbrTitles={17} >
 						<AccordionItem toLink="/2p1" >
 							2.1. Initialise repository
 						</AccordionItem>
@@ -146,7 +146,7 @@ export default function GitNavbar(){
 						3. What is GitHub?
 					</ChapterTitle>
 
-					<Accordion accordionState={ accordionState3 } >
+					<Accordion accordionState={ accordionState3 } nbrTitles={4} >
 						<AccordionItem>
 							3.1. Starting a new Git repository
 						</AccordionItem>
@@ -170,7 +170,7 @@ export default function GitNavbar(){
 						4. Other useful commands
 					</ChapterTitle>
 
-					<Accordion accordionState={ accordionState4 } >
+					<Accordion accordionState={ accordionState4 } nbrTitles={2} >
 						<AccordionItem>
 							4.1. General commands
 						</AccordionItem>
