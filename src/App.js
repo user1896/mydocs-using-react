@@ -10,6 +10,16 @@ function App() {
   There is a solution here: https://www.altcademy.com/blog/how-to-check-screen-width-in-reactjs/
   Check useEffect.
   */
+ /* When we click on a Link, the navbar should close, this is important for small screens 
+ we go to the "ChapterTitle.js" and "AccordionItem.js" where the <Link>s are, and give the <Link>s an
+ onClick event handler that do: "setToggleNavbar( !toggleNavbar )"
+ But In "Main.js" when we tag the navbar in small screens the <Main> will close, so now even when we click
+ a Link zin big screen the Main will still close. For that we need a condition that tells us when the screen
+ is small, so <Main> will only close where the screen in small + the navbar is toggled.
+ */
+
+  // When we click on a link we should be taken to the top of the page, not the place of wherever we were 
+  // scrolling before
   return (
     <ToggleNavbarProvider>
       <div className="bg-zinc-800 text-white min-h-screen pt-12">

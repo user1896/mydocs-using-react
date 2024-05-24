@@ -3,10 +3,6 @@ import {LeftNavbar, H1, Chapter, ChapterTitle, Accordion, AccordionItem}
 import TopNavbar from "../../top-navbar/TopNavbar";
 import { useAccordion, useSetAccordion } from "../../../context/navbarContext";
 
-/* if so many titles display, the last two at the bottom won't show because the navbar is positioned top-12 */
-
-/* When we click on a Link, the navbar should close, this is important for small screens */
-
 export default function GitNavbar(){
 	const accordion = useAccordion()
 	const setAccordion = useSetAccordion()
