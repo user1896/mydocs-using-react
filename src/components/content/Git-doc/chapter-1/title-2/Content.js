@@ -1,5 +1,5 @@
 import {Main, P, H2, H3, H4, H5, UList, OList, Img} from "../../../../main/ExportsMain";
-import img2 from "../../images/ch1-img2.png";
+import img from "../../images/ch1-p2.png";
 
 export default function Content(){
 	return (
@@ -13,7 +13,7 @@ export default function Content(){
 				maintains a local repository of their own which contains all the files and metadata present in the 
 				main repository.
 			</P>
-			<Img src={img2} alt="Distributed VCS" />
+			<Img src={img} alt="Distributed VCS" />
 			<P>
 				Every programmer maintains a local repository on its own, which is actually the copy or clone of the 
 				central repository on their hard drive. They can commit and update their local repository without 

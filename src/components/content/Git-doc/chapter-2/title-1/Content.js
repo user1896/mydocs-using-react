@@ -1,5 +1,5 @@
 import {Main, P, H2, H3, H4, H5, UList, OList, Img} from "../../../../main/ExportsMain";
-import img1 from "../../images/ch2-img1.png";
+import img from "../../images/ch2-p1.png";
 
 export default function Content(){
 	return (
@@ -12,7 +12,7 @@ export default function Content(){
 				among programmers collaboratively developing source code during software development.
 			</P>
 			<p>The architecture of Git :</p>
-			<Img src={img1} />
+			<Img src={img} />
 			<H3>2.1. Initialise repository</H3>
 			<UList>
 				<li>

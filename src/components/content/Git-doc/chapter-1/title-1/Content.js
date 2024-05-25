@@ -1,5 +1,5 @@
 import {Main, P, H2, H3, H4, H5, UList, OList, Img} from "../../../../main/ExportsMain";
-import img1 from "../../images/ch1-img1.png";
+import img from "../../images/ch1-p1.png";
 
 export default function Content(){
 	return (
@@ -20,7 +20,7 @@ export default function Content(){
 				collaboration.
 				<strong>It works on a single repository</strong> to which users can directly access a central server.
 			</P>
-			<Img src={img1} alt="Version control" />
+			<Img src={img} alt="Version control" />
 			<P>
 				The repository in the above diagram indicates a central server that could be local or remote which is
 				directly connected to each of the programmer’s workstation.

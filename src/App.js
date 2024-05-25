@@ -1,9 +1,9 @@
 import { Routes, Route } from "react-router-dom";
 import GitDoc from "./components/content/Git-doc/GitDoc";
 import {
-  // Chapter 1 imports
+  // Git chapter 1 imports
   GitCh1, GitCh1Page1, GitCh1Page2, 
-  // Chapter 2 imports
+  // Git chapter 2 imports
   GitCh2, GitCh2Page1, GitCh2Page2, GitCh2Page3, GitCh2Page4, GitCh2Page5,
   GitCh2Page6, GitCh2Page7, GitCh2Page8, GitCh2Page9, GitCh2Page10, GitCh2Page11, GitCh2Page12, GitCh2Page13,
   GitCh2Page14, GitCh2Page15
@@ -33,11 +33,11 @@ function App() {
       <div className="bg-zinc-800 text-white min-h-screen pt-12">
         <Routes>
           <Route exact path='/' element={<GitDoc />} />
-          {/* Chapter 1 */}
+          {/* Git's Chapter 1 */}
           <Route path='/git-ch1' element={<GitCh1 />} />
           <Route path='/git-ch1-p1' element={<GitCh1Page1 />} />
           <Route path='/git-ch1-p2' element={<GitCh1Page2 />} />
-          {/* Chapter 2 */}
+          {/* Git's Chapter 2 */}
           <Route path='/git-ch2' element={<GitCh2 />} />
           <Route path='/git-ch2-p1' element={<GitCh2Page1 />} />
           <Route path='/git-ch2-p2' element={<GitCh2Page2 />} />

@@ -80,51 +80,47 @@ export default function GitNavbar(){
 						</AccordionItem>
 						
 						<AccordionItem toLink="/git-ch2-p4" >
-							2.4. Staging area (intermediate area, index or cache)
+							2.4. Staging area and Commit
 						</AccordionItem>
 
 						<AccordionItem toLink="/git-ch2-p5" >
-							2.5. Commit
+							2.5. Pull
 						</AccordionItem>
 
 						<AccordionItem toLink="/git-ch2-p6" >
-							2.6. Pull
+							2.6. Fast-forward VS non fast-forward merge
 						</AccordionItem>
 
 						<AccordionItem toLink="/git-ch2-p7" >
-							2.7. Fast-forward VS non fast-forward merge
+							2.7. Push
 						</AccordionItem>
 
 						<AccordionItem toLink="/git-ch2-p8" >
-							2.8. Push
+							2.8. Main branch vs master branch
 						</AccordionItem>
 
 						<AccordionItem toLink="/git-ch2-p9" >
-							2.9. Main branch vs master branch
+							2.9. Origin vs main (or master)
 						</AccordionItem>
 
 						<AccordionItem toLink="/git-ch2-p10" >
-							2.10. Origin vs main (or master)
+							2.10. Branch
 						</AccordionItem>
 
 						<AccordionItem toLink="/git-ch2-p11" >
-							2.11. Branch
+							2.11. Fetching and merging using the remote tracking branch
 						</AccordionItem>
 
 						<AccordionItem toLink="/git-ch2-p12" >
-							2.12. Fetching and merging using the remote tracking branch
+							2.12. Git stash
 						</AccordionItem>
 
 						<AccordionItem toLink="/git-ch2-p13" >
-							2.13. Git stash
+							2.13. Git config
 						</AccordionItem>
 
 						<AccordionItem toLink="/git-ch2-p14" >
-							2.14. Git config
-						</AccordionItem>
-
-						<AccordionItem toLink="/git-ch2-p15" >
-							2.15. Git tag
+							2.14. Git tag
 						</AccordionItem>
 					</Accordion>
 				</Chapter>
