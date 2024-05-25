@@ -46,132 +46,124 @@ export default function GitNavbar(){
 				<H1>Git & Github</H1>
 
 				<Chapter>
-					<ChapterTitle onClick={handleAccordion1} toLink="/1" accordionState={ accordionState1 } >
+					<ChapterTitle onClick={handleAccordion1} toLink="/git-ch1" accordionState={ accordionState1 } >
 						1. Version control
 					</ChapterTitle>
 
 					<Accordion accordionState={ accordionState1 } nbrTitles={2} >
-						<AccordionItem toLink="/1p1" >
+						<AccordionItem toLink="/git-ch1-p1" >
 							1.1. Centralized VCS
 						</AccordionItem>
 
-						<AccordionItem toLink="/1p2" >
+						<AccordionItem toLink="/git-ch1-p2" >
 							1.2. Distributed VCS
 						</AccordionItem>
 					</Accordion>
 				</Chapter>
 
 				<Chapter>
-					<ChapterTitle onClick={handleAccordion2} toLink="/2" accordionState={ accordionState2 } >
+					<ChapterTitle onClick={handleAccordion2} toLink="/git-ch2" accordionState={ accordionState2 } >
 						2. What is Git?
 					</ChapterTitle>
 
 					<Accordion accordionState={ accordionState2 } nbrTitles={17} >
-						<AccordionItem toLink="/2p1" >
+						<AccordionItem toLink="/git-ch2-p1" >
 							2.1. Initialise repository
 						</AccordionItem>
 
-						<AccordionItem toLink="/2p2" >
+						<AccordionItem toLink="/git-ch2-p2" >
 							2.2. Remote
 						</AccordionItem>
 
-						<AccordionItem>
-							2.3. Status
-						</AccordionItem>
-
-						<AccordionItem>
-							2.4. Add
+						<AccordionItem toLink="/git-ch2-p3" >
+							2.3. Status, add, and revert
 						</AccordionItem>
 						
-						<AccordionItem>
-							2.5. Staging area (intermediate area, index or cache)
+						<AccordionItem toLink="/git-ch2-p4" >
+							2.4. Staging area (intermediate area, index or cache)
 						</AccordionItem>
 
-						<AccordionItem>
-							2.6. Commit
+						<AccordionItem toLink="/git-ch2-p5" >
+							2.5. Commit
 						</AccordionItem>
 
-						<AccordionItem>
-							2.7. Pull
+						<AccordionItem toLink="/git-ch2-p6" >
+							2.6. Pull
 						</AccordionItem>
 
-						<AccordionItem>
-							2.8. Fast-forward VS non fast-forward merge
+						<AccordionItem toLink="/git-ch2-p7" >
+							2.7. Fast-forward VS non fast-forward merge
 						</AccordionItem>
 
-						<AccordionItem>
-							2.9. Push
+						<AccordionItem toLink="/git-ch2-p8" >
+							2.8. Push
 						</AccordionItem>
 
-						<AccordionItem>
-							2.10. Main branch vs master branch
+						<AccordionItem toLink="/git-ch2-p9" >
+							2.9. Main branch vs master branch
 						</AccordionItem>
 
-						<AccordionItem>
-							2.11. Origin vs main (or master)
+						<AccordionItem toLink="/git-ch2-p10" >
+							2.10. Origin vs main (or master)
 						</AccordionItem>
 
-						<AccordionItem>
-							2.12. Branch
+						<AccordionItem toLink="/git-ch2-p11" >
+							2.11. Branch
 						</AccordionItem>
 
-						<AccordionItem>
-							2.13. Fetching and merging using the remote tracking branch
+						<AccordionItem toLink="/git-ch2-p12" >
+							2.12. Fetching and merging using the remote tracking branch
 						</AccordionItem>
 
-						<AccordionItem>
-							2.14. Git stash
+						<AccordionItem toLink="/git-ch2-p13" >
+							2.13. Git stash
 						</AccordionItem>
 
-						<AccordionItem>
-							2.15. Git config
+						<AccordionItem toLink="/git-ch2-p14" >
+							2.14. Git config
 						</AccordionItem>
 
-						<AccordionItem>
-							2.16. Git tag
-						</AccordionItem>
-
-						<AccordionItem>
-							2.17. Git revert
+						<AccordionItem toLink="/git-ch2-p15" >
+							2.15. Git tag
 						</AccordionItem>
 					</Accordion>
 				</Chapter>
 
 				<Chapter>
-					<ChapterTitle onClick={handleAccordion3} accordionState={ accordionState3 } >
+					<ChapterTitle onClick={handleAccordion3} toLink="/git-ch3" accordionState={ accordionState3 } >
 						3. What is GitHub?
 					</ChapterTitle>
 
 					<Accordion accordionState={ accordionState3 } nbrTitles={4} >
-						<AccordionItem>
+						<AccordionItem toLink="/git-ch3-p1" >
 							3.1. Starting a new Git repository
 						</AccordionItem>
 
-						<AccordionItem>
+						<AccordionItem toLink="/git-ch3-p2" >
 							3.2. Personal access token
 						</AccordionItem>
 
-						<AccordionItem>
+						<AccordionItem toLink="/git-ch3-p3" >
 							3.3. Git clone vs fork vs having my own repository (download it)
 						</AccordionItem>
 
-						<AccordionItem>
+						<AccordionItem toLink="/git-ch3-p4" >
 							3.4. History of contributions in my profile
 						</AccordionItem>
 					</Accordion>
 				</Chapter>
 
 				<Chapter>
-					<ChapterTitle onClick={handleAccordion4} accordionState={ accordionState4 } >
+					<ChapterTitle onClick={handleAccordion4} toLink="/git-ch4" accordionState={ accordionState4 } >
 						4. Other useful commands
 					</ChapterTitle>
 
 					<Accordion accordionState={ accordionState4 } nbrTitles={2} >
-						<AccordionItem>
+						<AccordionItem toLink="/git-ch4-p1" >
 							4.1. General commands
 						</AccordionItem>
 
-						<AccordionItem>
+						<AccordionItem toLink="/git-ch4-p2" >
 							4.2. Git’s commands
 						</AccordionItem>
 					</Accordion>

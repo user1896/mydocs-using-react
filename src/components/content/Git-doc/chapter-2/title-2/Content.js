@@ -19,6 +19,7 @@ export default function Content(){
 				The <strong>git remote</strong> command is essentially an interface for managing a list of remote entries that are 
 				stored in the repository's <strong>./.git/config</strong> file.
 			</P>
+
 			<H4>2.2.1. Viewing git remote configurations</H4>
 			<UList>
 				<li>
@@ -36,6 +37,7 @@ export default function Content(){
 					remote "name".
 				</li>
 			</UList>
+
 			<H4>2.2.2. Creating and modifying git remote configurations</H4>
 			<UList>
 				<li>
@@ -64,6 +66,7 @@ export default function Content(){
 				The result of the previous commands can also be achieved by directly editing 
 				the <strong>./.git/config</strong> file with a text editor.
 			</P>
+			
 			<H4>2.2.3. Git remote discussion</H4>
 			<P>
 				When you clone a repository with <strong>git clone</strong>, it automatically creates a remote 
