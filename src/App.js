@@ -28,6 +28,11 @@ function App() {
 
   // When we click on a link we should be taken to the top of the page, not the place of wherever we were 
   // scrolling before
+
+/*
+Connect to a database, and add the doc as Headers, Paragraphs, Lists and Images to the database, then fetch it
+from this app, and make the website dynamic. Then we fill the rest of the doc and the other docs.
+*/
   return (
     <ToggleNavbarProvider>
       <div className="bg-zinc-800 text-white min-h-screen pt-12">
@@ -43,7 +48,7 @@ function App() {
           <Route path='/git-ch2-p2' element={<GitCh2Page2 />} />
           <Route path='/git-ch2-p3' element={<GitCh2Page3 />} />
           <Route path='/git-ch2-p4' element={<GitCh2Page4 />} />
-          <Route path='/git-ch2-p5' element={<GitCh2Page5 />} />
+          {/* <Route path='/git-ch2-p5' element={<GitCh2Page5 />} />
           <Route path='/git-ch2-p6' element={<GitCh2Page6 />} />
           <Route path='/git-ch2-p7' element={<GitCh2Page7 />} />
           <Route path='/git-ch2-p8' element={<GitCh2Page8 />} />
@@ -52,8 +57,7 @@ function App() {
           <Route path='/git-ch2-p11' element={<GitCh2Page11 />} />
           <Route path='/git-ch2-p12' element={<GitCh2Page12 />} />
           <Route path='/git-ch2-p13' element={<GitCh2Page13 />} />
-          <Route path='/git-ch2-p14' element={<GitCh2Page14 />} />
-          <Route path='/git-ch2-p15' element={<GitCh2Page15 />} />
+          <Route path='/git-ch2-p14' element={<GitCh2Page14 />} /> */}
         </Routes>
       </div>
     </ToggleNavbarProvider>

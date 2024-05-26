@@ -83,7 +83,7 @@ export default function GitNavbar(){
 							2.4. Staging area and Commit
 						</AccordionItem>
 
-						<AccordionItem toLink="/git-ch2-p5" >
+						{/* <AccordionItem toLink="/git-ch2-p5" >
 							2.5. Pull
 						</AccordionItem>
 
@@ -121,11 +121,11 @@ export default function GitNavbar(){
 
 						<AccordionItem toLink="/git-ch2-p14" >
 							2.14. Git tag
-						</AccordionItem>
+						</AccordionItem> */}
 					</Accordion>
 				</Chapter>
 
-				<Chapter>
+				{/* <Chapter>
 					<ChapterTitle onClick={handleAccordion3} toLink="/git-ch3" accordionState={ accordionState3 } >
 						3. What is GitHub?
 					</ChapterTitle>
@@ -147,9 +147,9 @@ export default function GitNavbar(){
 							3.4. History of contributions in my profile
 						</AccordionItem>
 					</Accordion>
-				</Chapter>
+				</Chapter> */}
 
-				<Chapter>
+				{/* <Chapter>
 					<ChapterTitle onClick={handleAccordion4} toLink="/git-ch4" accordionState={ accordionState4 } >
 						4. Other useful commands
 					</ChapterTitle>
@@ -163,7 +163,7 @@ export default function GitNavbar(){
 							4.2. Git’s commands
 						</AccordionItem>
 					</Accordion>
-				</Chapter>
+				</Chapter> */}
 			</LeftNavbar>
 		</>
 	)
