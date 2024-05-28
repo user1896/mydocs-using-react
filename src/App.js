@@ -1,4 +1,5 @@
 import { Routes, Route } from "react-router-dom";
+import NotFound from "./components/NotFound";
 import GitDoc from "./components/content/git-doc/GitDoc";
 import GitNavbar from "./components/content/git-doc/GitNavbar";
 import {
@@ -64,6 +65,8 @@ from this app, and make the website dynamic. Then we fill the rest of the doc an
             <Route path='/git-ch2-p13' element={<GitCh2Page13 />} />
             <Route path='/git-ch2-p14' element={<GitCh2Page14 />} /> */}
           </Route>
+          
+          <Route path='*' element={<NotFound />} />
         </Routes>
       </div>
     </ToggleNavbarProvider>
