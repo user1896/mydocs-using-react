@@ -2,6 +2,7 @@ import {LeftNavbar, H1, Chapter, ChapterTitle, Accordion, AccordionItem}
 	from "../../left-navbar/ExportsNavbar";
 import TopNavbar from "../../top-navbar/TopNavbar";
 import { useAccordion, useSetAccordion } from "../../../context/navbarContext";
+import { Outlet } from "react-router-dom";
 
 export default function GitNavbar(){
 	const accordion = useAccordion()
@@ -41,6 +42,7 @@ export default function GitNavbar(){
 
 	return (
 		<>
+			<Outlet />
 			<TopNavbar />
 			<LeftNavbar>
 				<H1>Git & Github</H1>

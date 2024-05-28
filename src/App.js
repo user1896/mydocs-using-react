@@ -1,5 +1,6 @@
 import { Routes, Route } from "react-router-dom";
-import GitDoc from "./components/content/Git-doc/GitDoc";
+import GitDoc from "./components/content/git-doc/GitDoc";
+import GitNavbar from "./components/content/git-doc/GitNavbar";
 import {
   // Git chapter 1 imports
   GitCh1, GitCh1Page1, GitCh1Page2, 
@@ -7,8 +8,7 @@ import {
   GitCh2, GitCh2Page1, GitCh2Page2, GitCh2Page3, GitCh2Page4, GitCh2Page5,
   GitCh2Page6, GitCh2Page7, GitCh2Page8, GitCh2Page9, GitCh2Page10, GitCh2Page11, GitCh2Page12, GitCh2Page13,
   GitCh2Page14, GitCh2Page15
-} 
-  from "./components/content/Git-doc/ExportPages";
+} from "./components/content/git-doc/ExportPages";
 import {ToggleNavbarProvider} from "./context/navbarContext";
 
 function App() {
@@ -37,27 +37,33 @@ from this app, and make the website dynamic. Then we fill the rest of the doc an
     <ToggleNavbarProvider>
       <div className="bg-zinc-800 text-white min-h-screen pt-12">
         <Routes>
-          <Route exact path='/' element={<GitDoc />} />
-          {/* Git's Chapter 1 */}
-          <Route path='/git-ch1' element={<GitCh1 />} />
-          <Route path='/git-ch1-p1' element={<GitCh1Page1 />} />
-          <Route path='/git-ch1-p2' element={<GitCh1Page2 />} />
-          {/* Git's Chapter 2 */}
-          <Route path='/git-ch2' element={<GitCh2 />} />
-          <Route path='/git-ch2-p1' element={<GitCh2Page1 />} />
-          <Route path='/git-ch2-p2' element={<GitCh2Page2 />} />
-          <Route path='/git-ch2-p3' element={<GitCh2Page3 />} />
-          <Route path='/git-ch2-p4' element={<GitCh2Page4 />} />
-          {/* <Route path='/git-ch2-p5' element={<GitCh2Page5 />} />
-          <Route path='/git-ch2-p6' element={<GitCh2Page6 />} />
-          <Route path='/git-ch2-p7' element={<GitCh2Page7 />} />
-          <Route path='/git-ch2-p8' element={<GitCh2Page8 />} />
-          <Route path='/git-ch2-p9' element={<GitCh2Page9 />} />
-          <Route path='/git-ch2-p10' element={<GitCh2Page10 />} />
-          <Route path='/git-ch2-p11' element={<GitCh2Page11 />} />
-          <Route path='/git-ch2-p12' element={<GitCh2Page12 />} />
-          <Route path='/git-ch2-p13' element={<GitCh2Page13 />} />
-          <Route path='/git-ch2-p14' element={<GitCh2Page14 />} /> */}
+          <Route path="/" element={<GitNavbar />} >
+            {/* When we add more than one doc to this website, make sure to separate <TopNavbar /> from 
+            <GitNavbar /> and make it a Route that everything is nested in it.
+            Or make Topnavbar and Leftnavbar one Navbar, and then only change the Leftnavbar content
+            based on the doc.*/}
+            <Route exact path='/' element={<GitDoc />} />
+            {/* Git's Chapter 1 */}
+            <Route path='/git-ch1' element={<GitCh1 />} />
+            <Route path='/git-ch1-p1' element={<GitCh1Page1 />} />
+            <Route path='/git-ch1-p2' element={<GitCh1Page2 />} />
+            {/* Git's Chapter 2 */}
+            <Route path='/git-ch2' element={<GitCh2 />} />
+            <Route path='/git-ch2-p1' element={<GitCh2Page1 />} />
+            <Route path='/git-ch2-p2' element={<GitCh2Page2 />} />
+            <Route path='/git-ch2-p3' element={<GitCh2Page3 />} />
+            <Route path='/git-ch2-p4' element={<GitCh2Page4 />} />
+            {/* <Route path='/git-ch2-p5' element={<GitCh2Page5 />} />
+            <Route path='/git-ch2-p6' element={<GitCh2Page6 />} />
+            <Route path='/git-ch2-p7' element={<GitCh2Page7 />} />
+            <Route path='/git-ch2-p8' element={<GitCh2Page8 />} />
+            <Route path='/git-ch2-p9' element={<GitCh2Page9 />} />
+            <Route path='/git-ch2-p10' element={<GitCh2Page10 />} />
+            <Route path='/git-ch2-p11' element={<GitCh2Page11 />} />
+            <Route path='/git-ch2-p12' element={<GitCh2Page12 />} />
+            <Route path='/git-ch2-p13' element={<GitCh2Page13 />} />
+            <Route path='/git-ch2-p14' element={<GitCh2Page14 />} /> */}
+          </Route>
         </Routes>
       </div>
     </ToggleNavbarProvider>
